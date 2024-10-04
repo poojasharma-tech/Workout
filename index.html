@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Workout Tracker</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div class=h1>
+    <h1>Workout Tracker</h1>
+  </div>
+ 
+   <!-- Workout Form -->
+   <form id="workoutForm">
+     <label>Type: </label>
+     <input type="text" id="type" required><br>
+     
+     <label>Duration (minutes): </label>
+     <input type="number" id="duration" required><br>
+     
+     <label>Intensity: </label>
+     <select id="intensity" required>
+       <option value="Low">Low</option>
+       <option value="Medium">Medium</option>
+       <option value="High">High</option>
+     </select><br>
+     <div class='button'>
+     <button type="submit">Add Workout</button>
+      <!-- Toggle Workout History Button -->
+   <button id="toggleHistory">Workout History</button>
+   </div>
+   </form>
+ 
+   <!-- Workout History Section -->
+   <h2 id="historyTitle" style="display: none;">Workout History</h2>
+   <div id="workoutHistory" style="display: none;"></div>
+ 
+   <script src="app.js"></script>
+ </body>
+ </html>
+ 
